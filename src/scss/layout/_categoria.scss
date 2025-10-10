@@ -1,0 +1,39 @@
+.categoria{
+    padding: 2rem 0;
+    background-color: $grisClaro;
+    text-align: center;
+
+    h1{
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+    }
+}
+.productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.producto_cat{
+    background-color: $blanco;
+    padding: 1rem;
+    border-radius: .5rem;
+
+    img{
+        height: 10rem;
+        width: 100%;
+    }
+}
+.producto_cat-contenido{
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    .nombre{
+        font-size: 1.3rem;
+    }
+    .precio{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+}

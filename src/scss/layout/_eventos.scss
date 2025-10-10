@@ -1,0 +1,22 @@
+.eventos{
+    margin: 2rem 0;
+    text-align: center;
+}
+.evento{
+    margin-top: 2rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    &-img{
+        height: 22rem;
+        width: 40rem;
+    }
+
+    .btn-evento{
+        width: 5rem;
+        height: 2.5rem;
+        justify-content: center;
+        margin: auto auto;
+    }
+}

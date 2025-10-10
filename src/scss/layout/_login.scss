@@ -1,0 +1,46 @@
+.login{
+    background-color: #8a8a8a;
+    padding: 3rem 25rem;
+}
+.login-contenido{
+    text-align: center;
+    padding: 0 0 1.5rem 0;
+    background-color: $blanco;
+    border-radius: .5rem;
+
+    // SHADOW
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+    h2{
+        padding: .5rem;
+        color: $blanco;
+        text-transform: uppercase;
+        border-radius: .5rem .5rem 0 0;
+        background-color: $azul;
+        margin-bottom: 2rem;
+    }
+    fieldset{
+        border: none;
+    }
+
+    .btn-acceder{
+        margin: 0 auto;
+        text-transform: uppercase;
+    }
+}
+.campos{
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    input{
+        border: 1px solid $negro;
+        border-radius: .5rem;
+        display: flex;
+        width: 12rem;
+        padding: .5rem 1rem;
+        margin: 0 auto 2rem auto;
+    }
+}

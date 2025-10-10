@@ -1,0 +1,14 @@
+.banner{
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 20rem;
+    
+    color: $blanco;
+    display: flex;
+    flex-direction: column;
+}
+.banner-contenido{
+    margin-top: 11rem;
+}

@@ -1,0 +1,23 @@
+// Base
+@import 'base/normalize';
+@import 'base/variables';
+@import 'base/botones';
+@import 'base/globales';
+@import 'base/utilidades';
+
+// UI
+@import 'layout/header';
+@import 'layout/banner';
+@import 'layout/navegacion';
+@import 'layout/login';
+@import 'layout/eventos';
+@import 'layout/categoria';
+@import 'layout/producto';
+@import 'layout/pagar';
+@import 'layout/footer';
+
+// Internas
+@import 'internas/alertas';
+@import 'internas/admin';
+@import 'internas/inventario';
+

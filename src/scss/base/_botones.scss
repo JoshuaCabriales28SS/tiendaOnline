@@ -1,0 +1,62 @@
+// BOTONES
+.btn {
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.btn-naranja{
+    background-color: $naranja;
+    color: $blanco;
+    &:hover{
+        background-color: darken($naranja, 5);
+    }
+}
+.btn-azul{
+    background-color: $azul;
+    color: $blanco;
+    
+    &:hover{
+        background-color: $azulOscuro;
+    }
+}
+.btn-azulOsc{
+    background-color: $azulOscuro;
+    color: $blanco;
+    &:hover{
+        background-color: $azulOscuroM;
+    }
+}
+.btn-azulCl{
+    background-color: $azulClaro;
+    color: $blanco;
+    &:hover{
+        background-color: $azul;
+    }
+}
+.btn-verde{
+    background-color: $verde;
+    color: $blanco;
+
+    &:hover{
+        background-color: $verdeOscuro;
+    }
+}
+.btn-verdeOsc{
+    background-color: darken($verde,5);
+    color: $blanco;
+
+    &:hover{
+        background-color: darken($verdeOscuro,5);
+    }
+}
+.btn-rojo{
+    background-color: $rojo;
+    color: $blanco;
+
+    &:hover{
+        background-color: darken($rojo,5);
+    }
+}

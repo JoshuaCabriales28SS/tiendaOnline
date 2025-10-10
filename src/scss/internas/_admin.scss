@@ -1,0 +1,38 @@
+.productos{
+    display: flex;
+    background-color: $grisClaro;
+    text-align: center;
+    padding: 2rem 0;
+
+    .btn-agregar{
+        margin: 1rem auto;
+        width: 7rem;
+        justify-content: center;
+    }
+    .btn-editar, .btn-eliminar{
+        justify-content: center;
+    }
+    .btn-eliminar{
+        width: 100%;
+    }
+    .interacciones-admin{
+        display: flex;
+    }
+}
+.productos-tabla{
+    padding: 1rem;
+    background-color: $blanco;
+    border-radius: .5rem;
+    border: 1px solid $negro;
+    margin: 0 auto;
+    width: 100%;
+
+    img{
+        width: 6rem;
+    }
+
+    // SHADOW
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}

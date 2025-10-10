@@ -1,0 +1,13 @@
+.barra_nav{
+    background-color: $azul;
+    padding: 1.6rem 0;
+
+    .navegacion{
+        display: flex;
+        justify-content: space-around;
+        a{
+            text-transform: uppercase;
+            color: $blanco;
+        }
+    }
+}

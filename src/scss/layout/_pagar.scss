@@ -1,0 +1,64 @@
+.pago{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+.pago-contenedor{
+    border: 1px solid $negro;
+    border-radius: .5rem;
+    width: 50rem;
+    margin: 2rem auto 0;
+
+    h1{
+        text-align: center;
+        padding-top: 2rem;
+        background-color: $azulClaro;
+        border-radius: .5rem .5rem 0 0;
+    }
+    hr{
+        border: 1px solid $azulClaro;
+        width: 80%;
+    }
+    .total-text{
+        margin: 1rem 0;
+        text-align: center;
+    }
+}
+.productos_pago{
+    margin: 1rem auto 0 auto;
+    width: 30rem;
+}
+.producto_pago{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 1rem;
+
+    p{
+        text-align: center;
+    }
+    .nombre-producto_pago{
+        text-transform: uppercase;
+    }
+}
+.btn-pagar{
+    margin: 1rem auto 0 auto;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.form-pago{
+    margin: 4rem 0;
+
+    fieldset{
+        border: 1px solid $negro;
+        border-radius: .5rem;
+    }
+    .campo{
+        margin-bottom: 1.5rem;
+        input{
+            border: 1px solid darken($grisClaro, 7);
+            border-radius: .5rem;
+            padding: .5rem;
+        }
+    }
+}
