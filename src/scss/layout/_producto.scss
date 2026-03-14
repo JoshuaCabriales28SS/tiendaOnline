@@ -1,12 +1,14 @@
+@use "../base/variables";
+
 .fondo-gris{
-    background-color: $grisClaro;
+    background-color: variables.$grisClaro;
     padding: 7rem;
 }
 .producto{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     
-    background-color: $blanco;
+    background-color: variables.$blanco;
     padding: 2rem;
     border-radius: .5rem;
 
@@ -37,11 +39,11 @@
         width: 4rem;
         padding: .5rem;
         border-radius: .5rem;
-        border: 1px solid $negro;
+        border: 1px solid variables.$negro;
     }
     input[type='submit']{
         margin-top: 1rem;
-        color: $blanco;
-        background-color: $naranja;
+        color: variables.$blanco;
+        background-color: variables.$naranja;
     }
 }

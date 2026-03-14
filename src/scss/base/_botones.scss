@@ -1,3 +1,5 @@
+@use "variables";
+
 // BOTONES
 .btn {
     display: flex;
@@ -8,55 +10,55 @@
     cursor: pointer;
 }
 .btn-naranja{
-    background-color: $naranja;
-    color: $blanco;
+    background-color: variables.$naranja;
+    color: variables.$blanco;
     &:hover{
-        background-color: darken($naranja, 5);
+        background-color: variables.$naranja;
     }
 }
 .btn-azul{
-    background-color: $azul;
-    color: $blanco;
+    background-color: variables.$azul;
+    color: variables.$blanco;
     
     &:hover{
-        background-color: $azulOscuro;
+        background-color: variables.$azulOscuro;
     }
 }
 .btn-azulOsc{
-    background-color: $azulOscuro;
-    color: $blanco;
+    background-color: variables.$azulOscuro;
+    color: variables.$blanco;
     &:hover{
-        background-color: $azulOscuroM;
+        background-color: variables.$azulOscuroM;
     }
 }
 .btn-azulCl{
-    background-color: $azulClaro;
-    color: $blanco;
+    background-color: variables.$azulClaro;
+    color: variables.$blanco;
     &:hover{
-        background-color: $azul;
+        background-color: variables.$azul;
     }
 }
 .btn-verde{
-    background-color: $verde;
-    color: $blanco;
+    background-color: variables.$verde;
+    color: variables.$blanco;
 
     &:hover{
-        background-color: $verdeOscuro;
+        background-color: variables.$verdeOscuro;
     }
 }
 .btn-verdeOsc{
-    background-color: darken($verde,5);
-    color: $blanco;
+    background-color: variables.$verde;
+    color: variables.$blanco;
 
     &:hover{
-        background-color: darken($verdeOscuro,5);
+        background-color: variables.$verdeOscuro;
     }
 }
 .btn-rojo{
-    background-color: $rojo;
-    color: $blanco;
+    background-color: variables.$rojo;
+    color: variables.$blanco;
 
     &:hover{
-        background-color: darken($rojo,5);
+        background-color: variables.$rojo;
     }
 }

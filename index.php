@@ -1,6 +1,6 @@
 <?php
     require 'includes/app.php';
-    incluirTemplate('header', $inicio = true);
+    incluirTemplate('header');
 
     $db = conectarDB();
 
@@ -10,20 +10,12 @@
     $resultado = mysqli_query($db, $query);
 ?>
 
-    <div class="banner">
-        <div class="contenedor">
-            <div class="banner-contenido">
-                <h2>Los productos de mejor calidad</h2>
-                <h3>Shop-Corner</h3>
-            </div>
-        </div>
-    </div>
 
     <div class="barra_nav">
         <div class="contenedor">
             <nav class="navegacion">
                 <?php while($categoria = mysqli_fetch_assoc($resultado)): ?>
-                    <a href="/tiendaOnline/categoria.php?id=<?php echo $categoria['id'];?>"> <?php echo $categoria['nombre']; ?> </a>
+                    <a href="categoria.php?id=<?php echo $categoria['id'];?>"> <?php echo $categoria['nombre']; ?> </a>
                 <?php endwhile; ?>
             </nav>
         </div>
@@ -35,24 +27,24 @@
                 <h2>Eventos de la Tienda</h2>
                 <div class="evento">
                     <div class="evento-contenido">
-                        <img class="evento-img" src="/tiendaOnline/build/img/productos_limpieza.png" alt="banner limpieza">
+                        <img class="evento-img" src="/build/img/productos_limpieza.png" alt="banner limpieza">
                         <h3>Mejores productos de limpieza</h3>
                     </div>
-                    <a class="btn btn-verde btn-evento" href="/tiendaOnline/categoria.php?id=1">Ver</a>
+                    <a class="btn btn-verde btn-evento" href="/categoria.php?id=1">Ver</a>
                 </div>
                 <div class="evento">
                     <div class="evento-contenido">
-                        <img class="evento-img" src="/tiendaOnline/build/img/ropa_primavera.jpg" alt="banner ropa">
+                        <img class="evento-img" src="/build/img/ropa_primavera.jpg" alt="banner ropa">
                         <h3>Ropa de Primavera</h3>
                     </div>
-                    <a class="btn btn-verde btn-evento" href="/tiendaOnline/categoria.php?id=7">Ver</a>
+                    <a class="btn btn-verde btn-evento" href="/categoria.php?id=7">Ver</a>
                 </div>
                 <div class="evento">
                     <div class="evento-contenido">
-                        <img class="evento-img" src="/tiendaOnline/build/img/nuevos_celulares.jpg" alt="banner celulares">
+                        <img class="evento-img" src="/build/img/nuevos_celulares.jpg" alt="banner celulares">
                         <h3>Nuevos Modelos de Celulares</h3>
                     </div>
-                    <a class="btn btn-verde btn-evento" href="/tiendaOnline/categoria.php?id=2">Ver</a>
+                    <a class="btn btn-verde btn-evento" href="/categoria.php?id=2">Ver</a>
                 </div>
             </div>
         </div>

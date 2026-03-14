@@ -17,13 +17,13 @@
         
         if($id){
             //eliminar archivo
-            $query = "SELECT imagen FROM productos WHERE id = ${id}";
+            $query = "SELECT imagen FROM productos WHERE id = $id";
             $resultado = mysqli_query($db, $query);
             $producto = mysqli_fetch_assoc($resultado);
             unlink('../imagenes/'.$producto['imagen']);
             
             //eliminar propiedad
-            $query = "DELETE FROM productos WHERE id=${id}";
+            $query = "DELETE FROM productos WHERE id=$id";
             $resultado = mysqli_query($db, $query);
             if($resultado){
                 header('Location: /tiendaOnline/admin/index.php?resultado=3');
@@ -35,13 +35,7 @@
     <main class="productos">
         <div class="contenedor">
             <h1>Administrador de Inventario</h1>
-
-            <?php foreach($alertas as $alerta): ?>
-                <div class="alerta exito">
-                    <?php echo $alerta; ?>
-                </div>
-            <?php endforeach; ?>
-
+            
             <?php if(intval($resultado) === 1):?>
                 <p class="alerta exito">Producto añadido correctamente</p>
             <?php elseif(intval($resultado) === 2):?>
@@ -51,7 +45,7 @@
             <?php endif; ?>
 
             <div class="interacciones-admin">
-                <a class="btn btn-verdeOsc btn-agregar" href="/tiendaOnline/admin/productos/crear.php">Agregar producto</a>
+                <a class="btn btn-verdeOsc btn-agregar" href="/admin/productos/crear.php">Agregar producto</a>
             </div>
 
             <table class="productos-tabla">
@@ -60,7 +54,7 @@
                     <th>Nombre</th>
                     <th>Precio</th>
                     <th>Descripción</th>
-                    <th>Código</th>
+                    <th>Código de Barras</th>
                     <th>Imagen</th>
                 </thead>
                 <tbody>

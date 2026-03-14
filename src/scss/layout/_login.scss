@@ -1,3 +1,5 @@
+@use "../base/variables";
+
 .login{
     background-color: #8a8a8a;
     padding: 3rem 25rem;
@@ -5,7 +7,7 @@
 .login-contenido{
     text-align: center;
     padding: 0 0 1.5rem 0;
-    background-color: $blanco;
+    background-color: variables.$blanco;
     border-radius: .5rem;
 
     // SHADOW
@@ -15,10 +17,10 @@
 
     h2{
         padding: .5rem;
-        color: $blanco;
+        color: variables.$blanco;
         text-transform: uppercase;
         border-radius: .5rem .5rem 0 0;
-        background-color: $azul;
+        background-color: variables.$azul;
         margin-bottom: 2rem;
     }
     fieldset{
@@ -36,7 +38,7 @@
     display: flex;
     flex-direction: column;
     input{
-        border: 1px solid $negro;
+        border: 1px solid variables.$negro;
         border-radius: .5rem;
         display: flex;
         width: 12rem;

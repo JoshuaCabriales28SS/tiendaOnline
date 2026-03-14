@@ -36,6 +36,8 @@
     "terser": "^4.8.0"
   },
   "dependencies": {
+    "baseline-browser-mapping": "^2.10.8",
+    "caniuse-lite": "^1.0.30001778",
     "dev-dependencies": "^1.0.0"
   }
 }

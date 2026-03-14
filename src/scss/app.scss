@@ -1,23 +1,22 @@
 // Base
-@import 'base/normalize';
-@import 'base/variables';
-@import 'base/botones';
-@import 'base/globales';
-@import 'base/utilidades';
+@use 'base/normalize';
+@use 'base/variables';
+@use 'base/botones';
+@use 'base/globales';
+@use 'base/utilidades';
 
 // UI
-@import 'layout/header';
-@import 'layout/banner';
-@import 'layout/navegacion';
-@import 'layout/login';
-@import 'layout/eventos';
-@import 'layout/categoria';
-@import 'layout/producto';
-@import 'layout/pagar';
-@import 'layout/footer';
+@use 'layout/header';
+@use 'layout/navegacion';
+@use 'layout/login';
+@use 'layout/eventos';
+@use 'layout/categoria';
+@use 'layout/producto';
+@use 'layout/pagar';
+@use 'layout/footer';
 
 // Internas
-@import 'internas/alertas';
-@import 'internas/admin';
-@import 'internas/inventario';
+@use 'internas/alertas';
+@use 'internas/admin';
+@use 'internas/inventario';
 

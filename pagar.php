@@ -1,5 +1,5 @@
 <?php
-    require 'includes/app.php';
+    require './includes/app.php';
     incluirTemplate('header');
 
     $db = conectarDB();
@@ -14,7 +14,7 @@
         $resultado = mysqli_query($db, $query);
 
         if($resultado){
-            header('Location: /tiendaOnline/index.php');
+            header('Location: /index.php');
         }
     }
 ?>
@@ -44,7 +44,7 @@
             </h2>
         </div>
         <div class="contenedor">
-            <form method="POST" class="form-pago" action="/tiendaOnline/pagar.php">
+            <form method="POST" class="form-pago" action="/pagar.php">
                 <fieldset>
                     <div class="campo">
                         <label for="">Numero de tarjeta:</label>

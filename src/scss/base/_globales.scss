@@ -1,3 +1,5 @@
+@use "variables";
+
 html {
     box-sizing: border-box;
 }
@@ -24,5 +26,5 @@ h4{
 }
 a{
     text-decoration: none;
-    color: $negro;
+    color: variables.$negro;
 }

@@ -1,6 +1,7 @@
+@use "../base/variables";
+
 .header{
-    background-color: $grisOscuro;
-    height: 8rem;
+    background-color: variables.$grisOscuro;
     &-contenido{
         display: flex;
         padding: 2rem 0;
@@ -11,34 +12,6 @@
     display: flex;
     gap: 2rem;
 }
-
-// BARRA DE BUSQUEDA
-// .busqueda{
-//     margin-left: 3rem;
-//     display: flex;
-//     align-items: center;
-
-//     .barra_busqueda{
-//         width: 20rem;
-//         height: 3rem;
-//         padding: 1rem;
-//         border: 1px solid $grisClaro;
-//         border-radius: .5rem 0 0 .5rem;
-//     }
-//     .boton_busqueda {
-//         height: 3rem;
-//         padding: .5rem 1rem;
-//         background-color: $azul;
-//         color: $blanco;
-//         border: none;
-//         border-radius: 0 .5rem .5rem 0;
-//         cursor: pointer;
-        
-//         &:hover{
-//             background-color: $azulOscuro;
-//         }
-//     }
-// }
 
 // CARRITO DE COMPRAS
 #carrito {
@@ -57,7 +30,7 @@
     position: fixed;
     top: 0; left: 0;
     width: 100%; height: 100%;
-    background: rgba($negro, 0.5);
+    background: rgba(variables.$negro, 0.5);
     display: none;
     z-index: 998;
 }

@@ -7,4 +7,4 @@
 
     //mejor forma para cerrar sesion, vaciar el arreglo de sesion
     $_SESSION=[];
-    header('Location: /tiendaOnline/index.php');
+    header('Location: /index.php');

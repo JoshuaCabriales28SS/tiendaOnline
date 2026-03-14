@@ -83,7 +83,7 @@
             
             if($resultado){
                 // REDIRECCIONAR
-                header("Location: /tiendaOnline/admin/index.php?resultado=1");
+                header("Location: /admin/index.php?resultado=1");
             }
         }
     }
@@ -102,7 +102,7 @@
                 </div>
             <?php endforeach; ?>
 
-            <form action="/tiendaOnline/admin/productos/crear.php" method="POST" enctype="multipart/form-data">
+            <form action="/admin/productos/crear.php" method="POST" enctype="multipart/form-data">
                 <fieldset class="inventario-form">
 
                     <div class="campo">

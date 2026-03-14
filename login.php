@@ -22,7 +22,7 @@
 
         if(empty($errores)){
             //revisar si el usuario existe
-            $query = "SELECT * FROM usuarios WHERE correo='${email}'";
+            $query = "SELECT * FROM usuarios WHERE correo='$email'";
             $resultado = mysqli_query($db, $query);
 
             //saber si existe
@@ -42,7 +42,7 @@
                     $_SESSION['login'] = true;
 
                     //redireccionar si se inicio sesion correctamente al administrador
-                    header('Location: /tiendaOnline/admin/index.php');
+                    header('Location: /admin/index.php');
                 }else{
                     $errores[]="El password es incorrecto";
                 }

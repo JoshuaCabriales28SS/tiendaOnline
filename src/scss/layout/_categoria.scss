@@ -1,6 +1,8 @@
+@use "../base/variables";
+
 .categoria{
     padding: 2rem 0;
-    background-color: $grisClaro;
+    background-color: variables.$grisClaro;
     text-align: center;
 
     h1{
@@ -14,7 +16,7 @@
     gap: 1.5rem;
 }
 .producto_cat{
-    background-color: $blanco;
+    background-color: variables.$blanco;
     padding: 1rem;
     border-radius: .5rem;
 

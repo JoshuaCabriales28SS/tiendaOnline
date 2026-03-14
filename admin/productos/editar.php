@@ -12,10 +12,10 @@
     $id = filter_var($id, FILTER_VALIDATE_INT);
 
     if(!$id){
-        header('Location: /tiendaOnline/admin/index.php');
+        header('Location: /admin/index.php');
     }
 
-    $query = "SELECT * FROM productos WHERE id=${id}";
+    $query = "SELECT * FROM productos WHERE id=$id";
     $resultado = mysqli_query($db, $query);
     $producto = mysqli_fetch_assoc($resultado);
 
@@ -89,13 +89,13 @@
             //GENERAR CODIGO DE BARRAS DEL PRODUCTO
             $codigoBarras = $producto['codigo'];
 
-            $queryProd = "UPDATE productos SET stock=${stock}, nombre='${nombre}', precio=${precio}, imagen='${nombreImagen}', descripcion='${descripcion}', codigo=${codigoBarras}, categorias_id=${categorias_id} WHERE id=${id}";
+            $queryProd = "UPDATE productos SET stock=$stock, nombre='$nombre', precio=$precio, imagen='$nombreImagen', descripcion='$descripcion', codigo=$codigoBarras, categorias_id=$categorias_id WHERE id=$id";
 
             $resultadoProd = mysqli_query($db, $queryProd);
             
             if($resultadoProd){
                 // REDIRECCIONAR
-                header("Location: /tiendaOnline/admin/index.php?resultado=2");
+                header("Location: /admin/index.php?resultado=2");
             }
         }
     }
@@ -114,7 +114,7 @@
                 </div>
             <?php endforeach; ?>
 
-            <form action="/tiendaOnline/admin/productos/editar.php?id=<?php echo $producto['id']; ?>" method="POST" enctype="multipart/form-data">
+            <form action="/admin/productos/editar.php?id=<?php echo $producto['id']; ?>" method="POST" enctype="multipart/form-data">
                 <fieldset class="inventario-form">
 
                     <div class="campo">

@@ -1,16 +1,18 @@
+@use "../base/variables";
+
 .alerta{
     padding: .5rem;
     text-align: center;
-    color: $blanco;
+    color: variables.$blanco;
     font-weight: bold;
     text-transform: uppercase;
     margin: 1rem 0;
 
     &.error{
-        background-color: $rojo;
+        background-color: variables.$rojo;
     }
 
     &.exito{
-        background-color: $verde;
+        background-color: variables.$verde;
     }
 }

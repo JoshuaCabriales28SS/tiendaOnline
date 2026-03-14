@@ -1,5 +1,7 @@
+@use "../base/variables";
+
 .inventario{
-    background-color: $grisClaro;
+    background-color: variables.$grisClaro;
     padding-bottom: 3rem;
 }
 .inventario-contenido{
@@ -10,17 +12,17 @@
     .alerta{
         padding: .5rem;
         text-align: center;
-        color: $blanco;
+        color: variables.$blanco;
         font-weight: bold;
         text-transform: uppercase;
         margin: 1rem 0;
     
         &.error{
-            background-color: $rojo;
+            background-color: variables.$rojo;
         }
     
         &.exito{
-            background-color: $verde;
+            background-color: variables.$verde;
         }
     }
 }
@@ -33,7 +35,7 @@
     margin: 0 auto;
 }
 .inventario-form{
-    background-color: $blanco;
+    background-color: variables.$blanco;
     border: none;
     padding: 2rem 1rem;
     border-radius: 0.5rem;
@@ -52,7 +54,7 @@
         input[type='text'], input[type='number'],textarea, select{
             padding: .5rem;
             border-radius: .5rem;
-            border: 1px solid $negro;
+            border: 1px solid variables.$negro;
         }
         textarea{
             height: 5rem;

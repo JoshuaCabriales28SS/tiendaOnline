@@ -1,7 +1,5 @@
 <?php
 
-use BcMath\Number;
-
     require 'includes/app.php';
     incluirTemplate('header');
 
@@ -13,10 +11,10 @@ use BcMath\Number;
     
     //si no hay id, se redirecciona
     if(!$id){
-        header('Location: /tiendaOnline/index.php');
+        header('Location: /index.php');
     }
 
-    $query = "SELECT * FROM productos WHERE id=${id}";
+    $query = "SELECT * FROM productos WHERE id=$id";
     $resultado = mysqli_query($db, $query);
     $producto = mysqli_fetch_assoc($resultado);
 
@@ -40,14 +38,14 @@ use BcMath\Number;
             $resultadoProd = mysqli_query($db, $queryProd);
 
             if($resultadoProd){
-                header('Location: /tiendaOnline/index.php');
+                header('Location: /index.php');
             }
         }
     }
 ?>
 
     <main class="fondo-gris">
-        <a class="btn btn-naranja btn-volver" href="/tiendaOnline/categoria.php?id=<?php echo $producto['categorias_id']; ?>">Volver</a>
+        <a class="btn btn-naranja btn-volver" href="/categoria.php?id=<?php echo $producto['categorias_id']; ?>">Volver</a>
         <div class="contenedor">
 
             <?php foreach($errores as $error): ?>
@@ -65,7 +63,7 @@ use BcMath\Number;
                     <ul>
                         <?php echo $producto['descripcion']; ?>
                     </ul>
-                    <form action="/tiendaOnline/producto.php?id=<?php echo $producto['id']; ?>" class="producto-form" method="POST">
+                    <form action="/producto.php?id=<?php echo $producto['id']; ?>" class="producto-form" method="POST">
                         <label for="cantidad">Cantidad</label>
                         <input type="number" name="cantidad" id="cantidad" min="1" max="<?php echo $producto['stock']; ?>" >
 

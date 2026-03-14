@@ -1,6 +1,8 @@
+@use "../base/variables";
+
 .productos{
     display: flex;
-    background-color: $grisClaro;
+    background-color: variables.$grisClaro;
     text-align: center;
     padding: 2rem 0;
 
@@ -21,9 +23,9 @@
 }
 .productos-tabla{
     padding: 1rem;
-    background-color: $blanco;
+    background-color: variables.$blanco;
     border-radius: .5rem;
-    border: 1px solid $negro;
+    border: 1px solid variables.$negro;
     margin: 0 auto;
     width: 100%;
 
