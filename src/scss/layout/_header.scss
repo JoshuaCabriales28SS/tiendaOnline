@@ -16,12 +16,14 @@
 // CARRITO DE COMPRAS
 #carrito {
     position: fixed;
-    top: 20%;
-    right: 20px;
-    width: 300px;
+    top: 13%;
+    right: 255px;
+    border-radius: 2rem;
+    min-width: 300px;
+    width: auto;
     background-color: white;
     border: 1px solid #ccc;
-    padding: 20px;
+    padding: 1rem 3rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     display: none;
     z-index: 999;

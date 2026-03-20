@@ -28,12 +28,12 @@
     $precio = $producto['precio'];
     $descripcion = $producto['descripcion'];
     $categorias_id = $producto['categorias_id'];
-
-    // ELIMINAR IMAGEN DE CARPETA
-    unlink('../imagenes/'.$producto['imagen']);
     
     // SE EJECUTA AL MOMENTO DE ENVIAR LOS DATOS
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
+        // ELIMINAR IMAGEN DE CARPETA
+        unlink('../../images/'.$producto['imagen']);
+
         //Asignar archivos a una variable, la variable es igual a la imagen subida
         $imagen = $_FILES['imagen'];
         $medida = 1000*1000;
@@ -106,7 +106,22 @@
     <main class="inventario">
         <div class="contenedor inventario-contenido">
             <h1>Editar producto</h1>
-            <a class="btn btn-naranja btn-volver" href="../index.php">Volver</a>
+            <a class="btn btn-naranja btn-volver" href="../index.php">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#000000"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    >
+                    <path d="M9 14l-4 -4l4 -4" />
+                    <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
+                </svg>
+            </a>
             
             <?php foreach($errores as $error): ?>
                 <div class="alerta error">

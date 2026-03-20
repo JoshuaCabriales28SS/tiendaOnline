@@ -2,14 +2,21 @@
 
 .barra_nav{
     background-color: variables.$azul;
-    padding: 1.6rem 0;
 
     .navegacion{
         display: flex;
         justify-content: space-around;
+
         a{
             text-transform: uppercase;
             color: variables.$blanco;
+            padding: 1.5rem 1rem;
+            transition: .2s;
+            
+            &:hover {
+                background-color: variables.$azulOscuro;
+                transition: .3s;
+            }
         }
     }
 }

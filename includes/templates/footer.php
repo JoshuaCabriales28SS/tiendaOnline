@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer">
         <div class="contenedor">
             <div class="footer-contenido">
                 <p>All Rights Reserved. <?php echo(date('Y')) ?> </p>

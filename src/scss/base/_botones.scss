@@ -12,53 +12,91 @@
 .btn-naranja{
     background-color: variables.$naranja;
     color: variables.$blanco;
-    &:hover{
-        background-color: variables.$naranja;
+    transition: .3s;
+    
+    &:hover {
+        background-color: variables.$naranjaOsc;
+        transition: .3s;
     }
 }
 .btn-azul{
     background-color: variables.$azul;
     color: variables.$blanco;
+    transition: .3s;
     
-    &:hover{
+    &:hover {
         background-color: variables.$azulOscuro;
+        transition: .3s;
     }
 }
 .btn-azulOsc{
     background-color: variables.$azulOscuro;
     color: variables.$blanco;
-    &:hover{
+    transition: .3s;
+    
+    &:hover {
         background-color: variables.$azulOscuroM;
+        transition: .3s;
     }
 }
 .btn-azulCl{
     background-color: variables.$azulClaro;
     color: variables.$blanco;
-    &:hover{
+    transition: .3s;
+
+    &:hover {
         background-color: variables.$azul;
+        transition: .3s;
     }
 }
 .btn-verde{
     background-color: variables.$verde;
     color: variables.$blanco;
+    transition: .3s;
 
-    &:hover{
+    &:hover {
         background-color: variables.$verdeOscuro;
+        transition: .3s;
     }
 }
 .btn-verdeOsc{
     background-color: variables.$verde;
     color: variables.$blanco;
+    transition: .3s;
 
-    &:hover{
+    &:hover {
         background-color: variables.$verdeOscuro;
+        transition: .3s;
     }
 }
 .btn-rojo{
     background-color: variables.$rojo;
     color: variables.$blanco;
+    transition: .3s;
 
-    &:hover{
-        background-color: variables.$rojo;
+    &:hover {
+        background-color: variables.$rojoOsc;
+        transition: .3s;
+    }
+}
+.btn-volver{
+    width: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.btn-comprar {
+    margin: 2rem auto 0 auto;
+    width: 15rem;
+    height: 4rem;
+    justify-content: center;
+    background-color: variables.$amarillo;
+    text-transform: uppercase;
+    gap: 1rem;
+    color: variables.$azulOscuro;
+    transition: .3s;
+    
+    &:hover {
+        width: 18rem;
+        transition: .3s;
     }
 }

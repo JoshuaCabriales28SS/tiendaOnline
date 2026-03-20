@@ -10,7 +10,6 @@
     $resultado = mysqli_query($db, $query);
 ?>
 
-
     <div class="barra_nav">
         <div class="contenedor">
             <nav class="navegacion">

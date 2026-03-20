@@ -1,5 +1,4 @@
 <?php
-
     require 'includes/app.php';
     incluirTemplate('header');
 
@@ -45,7 +44,22 @@
 ?>
 
     <main class="fondo-gris">
-        <a class="btn btn-naranja btn-volver" href="/categoria.php?id=<?php echo $producto['categorias_id']; ?>">Volver</a>
+        <a class="btn btn-naranja btn-volver" href="/categoria.php?id=<?php echo $producto['categorias_id']; ?>">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#000000"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                >
+                <path d="M9 14l-4 -4l4 -4" />
+                <path d="M5 10h11a4 4 0 1 1 0 8h-1" />
+            </svg>
+        </a>
         <div class="contenedor">
 
             <?php foreach($errores as $error): ?>
@@ -67,7 +81,26 @@
                         <label for="cantidad">Cantidad</label>
                         <input type="number" name="cantidad" id="cantidad" min="1" max="<?php echo $producto['stock']; ?>" >
 
-                        <input class="btn" type="submit" value="Agregar al carrito">
+                        <button class="btn btn-comprar" type="submit">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="32"
+                                height="32"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#000000"
+                                stroke-width="1"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                >
+                                <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path d="M12.5 17h-6.5v-14h-2" />
+                                <path d="M6 5l14 1l-.86 6.017m-2.64 .983h-10.5" />
+                                <path d="M16 19h6" />
+                                <path d="M19 16v6" />
+                            </svg>
+                            <h3>Comprar</h3>
+                        </button>
                     </form>
                 </div>
             </div>
