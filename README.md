@@ -21,3 +21,5 @@ localhost:8000/index.php
 ```  
 
 ## Para entrar al modo admin, ingresar con el usuario y contraseña de prueba  
+
+## Para rellenar la BD, primero el modelo deben hacer Forward Engineer y despues ejecutar el script en MySQL (50 productos)
