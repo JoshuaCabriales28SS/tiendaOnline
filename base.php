@@ -1,21 +1,17 @@
 <?php
     require 'includes/app.php';
-    incluirTemplate('header', $inicio = true);
+    incluirTemplate('header');
 ?>
-
-    <div class="banner">
+    <div class="barra_nav">
         <div class="contenedor">
-            <div class="banner-contenido">
-                <h2>Los productos de mejor calidad</h2>
-                <h3>Shop-Corner</h3>
-            </div>
+            <nav class="navegacion">
+                <?php while($categoria = mysqli_fetch_assoc($resultado)): ?>
+                    <a href="categoria.php?id=<?php echo $categoria['id'];?>"> <?php echo $categoria['nombre']; ?> </a>
+                <?php endwhile; ?>
+            </nav>
         </div>
     </div>
-
-<?php
-    incluirTemplate('navegacion');
-?>
-
+    
     <main>
         <div class="contenedor">
             <h1>BASE PARA TRABAJAR</h1>

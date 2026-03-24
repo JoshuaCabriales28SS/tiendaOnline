@@ -79,6 +79,7 @@
         transition: .3s;
     }
 }
+
 .btn-volver{
     width: 3rem;
     text-align: center;
@@ -99,4 +100,10 @@
         width: 18rem;
         transition: .3s;
     }
+}
+.btn-agregar{
+    width: 8rem;
+    justify-content: center;
+    gap: .5rem;
+    align-items: center;
 }

@@ -35,12 +35,11 @@
                 if($auth){
                     //usuario autenticado
                     session_start(); //se inicia sesion
-
+                    
                     //llenar arreglo de sesion con informacion que deseas
-                           //variable con lo que quieras tener
                     $_SESSION['usuario'] = $usuario['email'];
                     $_SESSION['login'] = true;
-
+                    
                     //redireccionar si se inicio sesion correctamente al administrador
                     header('Location: /admin/index.php');
                 }else{

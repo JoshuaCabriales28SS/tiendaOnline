@@ -1,6 +1,6 @@
 @use "../base/variables";
 
-.productos{
+.productos_admin{
     display: flex;
     background-color: variables.$grisClaro;
     text-align: center;
@@ -24,22 +24,23 @@
     }
 }
 .productos-tabla{
-    padding: 1rem;
+    padding: 2rem;
     background-color: variables.$blanco;
     border-radius: .5rem;
-    border: 1px solid variables.$negro;
+    border: 1px solid variables.$grisClaro;
     margin: 0 auto;
     width: 100%;
 
     .tr {
-        height: 6rem;
+        height: 8rem;
         &-desc {
             max-width: 20rem;
         }
     }
 
     img{
-        width: 6rem;
+        height: 6rem;
+        image-rendering: auto;
     }
 
     // SHADOW

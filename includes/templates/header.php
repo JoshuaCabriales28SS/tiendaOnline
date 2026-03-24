@@ -67,7 +67,7 @@
                                 </li>
                             <?php endwhile; ?>
                         </ul>
-                        <a class="pagar" href="pagar.php">Pagar</a>
+                        <a class="pagar btn btn-verde" href="/pagar.php">Pagar</a>
                     </div>
 
                     <?php if(!$auth): ?>

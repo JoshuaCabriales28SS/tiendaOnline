@@ -11,12 +11,45 @@
             text-transform: uppercase;
             color: variables.$blanco;
             padding: 1.5rem 1rem;
-            transition: .2s;
+            transition: .3s;
             
             &:hover {
                 background-color: variables.$azulOscuro;
                 transition: .3s;
             }
         }
+    }
+}
+
+.index-main {
+    display: flex;
+
+    main {
+        width: 100%;
+    }
+}
+.aside {
+    background-color: variables.$gris;
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+    padding: 4rem 3rem 4rem 1rem;
+    gap: 1rem;
+}
+.aside-categoria {
+    text-transform: uppercase;
+    padding: .5rem;
+    width: 8rem;
+    height: 2rem;
+    border-radius: .5rem;
+    background-color: variables.$grisClaro;
+    transition: .1s;
+    
+    &:hover {
+        display: flex;
+        width: 10rem;
+        height: 3rem;
+        align-items: center;
+        transition: .2s;
     }
 }

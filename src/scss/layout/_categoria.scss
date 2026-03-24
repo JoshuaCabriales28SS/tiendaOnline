@@ -1,6 +1,6 @@
 @use "../base/variables";
 
-.categoria{
+.categoria-main{
     padding: 2rem 0;
     background-color: variables.$grisClaro;
     text-align: center;
@@ -12,7 +12,7 @@
 }
 .productos{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem;
 }
 .producto_cat{

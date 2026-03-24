@@ -9,16 +9,13 @@
 
     $resultado = mysqli_query($db, $query);
 ?>
+<div class="index-main">
 
-    <div class="barra_nav">
-        <div class="contenedor">
-            <nav class="navegacion">
-                <?php while($categoria = mysqli_fetch_assoc($resultado)): ?>
-                    <a href="categoria.php?id=<?php echo $categoria['id'];?>"> <?php echo $categoria['nombre']; ?> </a>
-                <?php endwhile; ?>
-            </nav>
-        </div>
-    </div>
+    <aside class="aside">
+        <?php while($categoria = mysqli_fetch_assoc($resultado)): ?>
+            <a class="aside-categoria" href="categoria.php?id=<?php echo $categoria['id'];?>"> <?php echo $categoria['nombre']; ?> </a>
+        <?php endwhile; ?>
+    </aside>
 
     <main>
         <div class="contenedor">
@@ -36,19 +33,20 @@
                         <img class="evento-img" src="/build/img/ropa_primavera.jpg" alt="banner ropa">
                         <h3>Ropa de Primavera</h3>
                     </div>
-                    <a class="btn btn-verde btn-evento" href="/categoria.php?id=7">Ver</a>
+                    <a class="btn btn-verde btn-evento" href="/categoria.php?id=2">Ver</a>
                 </div>
                 <div class="evento">
                     <div class="evento-contenido">
                         <img class="evento-img" src="/build/img/nuevos_celulares.jpg" alt="banner celulares">
                         <h3>Nuevos Modelos de Celulares</h3>
                     </div>
-                    <a class="btn btn-verde btn-evento" href="/categoria.php?id=2">Ver</a>
+                    <a class="btn btn-verde btn-evento" href="/categoria.php?id=1">Ver</a>
                 </div>
             </div>
         </div>
     </main>
-
+    
+</div>
 <?php
     // cerrar conexión con base de datos
     mysqli_close($db);

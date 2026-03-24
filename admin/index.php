@@ -32,7 +32,7 @@
     }
 ?>
 
-    <main class="productos">
+    <main class="productos_admin">
         <div class="contenedor">
             <h1>Administrador de Inventario</h1>
             

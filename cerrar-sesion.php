@@ -6,5 +6,5 @@
     // session_destroy();
 
     //mejor forma para cerrar sesion, vaciar el arreglo de sesion
-    $_SESSION=[];
+    $_SESSION = [];
     header('Location: /index.php');

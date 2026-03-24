@@ -11,7 +11,7 @@
         echo "<pre>";
         var_dump($variable);
         echo "</pre>";
-        exit;
+        // exit;
     }
     function estaAutenticado(){
         session_start();

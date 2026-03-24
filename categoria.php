@@ -29,7 +29,7 @@
 ?>
 
 
-<main class="categoria">
+<main class="categoria-main">
         <a class="btn btn-naranja btn-volver btn-izq" href="/index.php">
             <svg
                 xmlns="http://www.w3.org/2000/svg"

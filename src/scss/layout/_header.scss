@@ -40,4 +40,27 @@
     float: right;
     cursor: pointer;
     color: red;
+    margin: .3rem;
+    transition: .3s;
+    
+    &:hover {
+        margin: 0;
+        color: white;
+        background-color: red;
+        padding: .3rem;
+        transition: .3s;
+    }
+}
+.pagar {
+    text-transform: uppercase;
+    display: flex;
+    margin: .8rem auto;
+    justify-content: center;
+    transition: .5s;
+
+    &:hover {
+        margin: 1.5rem auto .8rem auto;
+        transition: .5s;
+        height: 3rem;
+    }
 }
